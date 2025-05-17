@@ -1,0 +1,275 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  header button{
+    background-color: #b79681;
+
+  }
+  
+  header h1 span {
+    color: #ff914d;
+    font-weight: bold;
+  }
+  
+
+.seccion-titulo {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ff914d;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ff914d;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+
+  .travis{
+    text-align: center;
+  }
+
+  
+  .biografia {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    padding: 1rem 2rem;
+    color: #e0e0e0;
+  }
+  
+  .nombre-real {
+    color: #ffa07a;
+    font-weight: bold;
+  }
+  
+  .fecha, .lugar, .rol, .genero, .proyecto, .cancion {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #888;
+    text-underline-offset: 3px;
+  }
+  
+  .marca {
+    color: #f08080;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .nombre-zapatos{
+    color: #ae4601;
+  }
+
+  .AF1{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .AF1 .seccion-titulo {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .AF1 .zapato {
+    
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    text-align: center; 
+  }
+  
+  .AF1 .zapato img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .AF1 .nombre-zapatos {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .precio{
+    font-size: 1.7rem;
+    color: coral;
+  }
+
+  .J1{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .J1 .seccion-titulo {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .J1 .zapato {
+    
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    text-align: center; 
+  }
+  
+  .J1 .zapato img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .J1 .nombre-zapatos {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .AF1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+    .J1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+.zapato{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.container:hover> :not(:hover){
+    opacity: 0.3s;
+
+}
+.zapato:hover{
+    transform: scale(1.1);
+}
+
+  
+
+  /*modo claro*/
+
+  body.modo-claro {
+    background-color: #ddd1d1;
+    color: #121212;
+}
+
+body.modo-claro header {
+    background: #e9e2e2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0);
+    padding: 2rem;
+    text-align: center;
+}
+
+body.modo-claro header h1 {
+    color: #222;
+}
+
+body.modo-claro header h1 span {
+    color: #ff6600;
+}
+
+body.modo-claro .seccion-titulo {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+
+body.modo-claro .biografia {
+    color: #333;
+}
+
+body.modo-claro .nombre-real {
+    color: #cc3300;
+}
+
+body.modo-claro .fecha,
+body.modo-claro .lugar,
+body.modo-claro .rol,
+body.modo-claro .genero,
+body.modo-claro .proyecto,
+body.modo-claro .cancion {
+    color: #111;
+    text-decoration-color: #bbb;
+}
+
+body.modo-claro .marca {
+    color: #cc4444;
+}
+
+body.modo-claro .nombre-zapatos {
+    color: #cc6600;
+}
+
+body.modo-claro .AF1 .zapato,
+body.modo-claro .J1 .zapato {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+body.modo-claro .precio {
+    color: #e67300;
+} 
+
+.footer{
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.campo textarea {
+  height: 10rem; 
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  resize: vertical;
+  background-color: var(--blanco);
+  color: #ffffff;
+}
